@@ -9,4 +9,12 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+  @Get('/doge')
+  getDoge(): string {
+    return this.appService.getDoge();
+  }
+  @Get('/doges')
+  getDoges(): string[] {
+    return this.appService.getDoges();
+  }
 }
